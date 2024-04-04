@@ -1,0 +1,357 @@
+[Container] 2024/03/14 14:55:26.364163 Running on CodeBuild On-demand
+[Container] 2024/03/14 14:55:26.364296 Waiting for agent ping
+[Container] 2024/03/14 14:55:26.666090 Waiting for DOWNLOAD_SOURCE
+[Container] 2024/03/14 14:55:29.060704 Phase is DOWNLOAD_SOURCE
+[Container] 2024/03/14 14:55:29.066198 CODEBUILD_SRC_DIR=/codebuild/output/src146935330/src
+[Container] 2024/03/14 14:55:29.066940 YAML location is /codebuild/output/src146935330/src/buildspec.yml
+[Container] 2024/03/14 14:55:29.069588 Setting HTTP client timeout to higher timeout for S3 source
+[Container] 2024/03/14 14:55:29.069687 Processing environment variables
+[Container] 2024/03/14 14:55:29.280967 No runtime version selected in buildspec.
+[Container] 2024/03/14 14:55:29.353079 Moving to directory /codebuild/output/src146935330/src
+[Container] 2024/03/14 14:55:29.356104 Unable to initialize cache download: no paths specified to be cached
+[Container] 2024/03/14 14:55:29.411622 Configuring ssm agent with target id: codebuild:8162c99a-e9bf-4109-8328-26d0956e9654
+[Container] 2024/03/14 14:55:29.448085 Successfully updated ssm agent configuration
+[Container] 2024/03/14 14:55:29.448475 Registering with agent
+[Container] 2024/03/14 14:55:29.448491 Phases found in YAML: 3
+[Container] 2024/03/14 14:55:29.448497  BUILD: 5 commands
+[Container] 2024/03/14 14:55:29.448501  POST_BUILD: 7 commands
+[Container] 2024/03/14 14:55:29.448506  PRE_BUILD: 16 commands
+[Container] 2024/03/14 14:55:29.448821 Phase complete: DOWNLOAD_SOURCE State: SUCCEEDED
+[Container] 2024/03/14 14:55:29.448835 Phase context status code:  Message: 
+[Container] 2024/03/14 14:55:29.605633 Entering phase INSTALL
+[Container] 2024/03/14 14:55:29.713340 Phase complete: INSTALL State: SUCCEEDED
+[Container] 2024/03/14 14:55:29.713369 Phase context status code:  Message: 
+[Container] 2024/03/14 14:55:29.749335 Entering phase PRE_BUILD
+[Container] 2024/03/14 14:55:29.749862 Running command echo Logging in to Amazon ECR new...
+Logging in to Amazon ECR new...
+
+[Container] 2024/03/14 14:55:29.757250 Running command aws --version
+aws-cli/2.15.23 Python/3.11.6 Linux/4.14.291-218.527.amzn2.x86_64 exec-env/AWS_ECS_EC2 exe/x86_64.amzn.2023 prompt/off
+
+[Container] 2024/03/14 14:55:41.544858 Running command aws configure set aws_access_key_id $aws_access_key
+
+[Container] 2024/03/14 14:55:42.091726 Running command aws configure set aws_secret_access_key $aws_secret_key
+
+[Container] 2024/03/14 14:55:42.690306 Running command aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 353536283373.dkr.ecr.us-east-1.amazonaws.com
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+
+[Container] 2024/03/14 14:55:43.565789 Running command REPOSITORY_URI=$repo_uri
+
+[Container] 2024/03/14 14:55:43.572506 Running command COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
+
+[Container] 2024/03/14 14:55:43.581192 Running command IMAGE_TAG=build-$(echo $CODEBUILD_BUILD_ID | awk -F":" '{print $2}')
+
+[Container] 2024/03/14 14:55:43.826004 Running command docker --version
+Docker version 23.0.6, build ef23cbc
+
+[Container] 2024/03/14 14:55:43.842216 Running command cat /etc/os-release
+NAME="Amazon Linux"
+VERSION="2023"
+ID="amzn"
+ID_LIKE="fedora"
+VERSION_ID="2023"
+PLATFORM_ID="platform:al2023"
+PRETTY_NAME="Amazon Linux 2023"
+ANSI_COLOR="0;33"
+CPE_NAME="cpe:2.3:o:amazon:amazon_linux:2023"
+HOME_URL="https://aws.amazon.com/linux/"
+BUG_REPORT_URL="https://github.com/amazonlinux/amazon-linux-2023"
+SUPPORT_END="2028-03-15"
+
+[Container] 2024/03/14 14:55:43.849877 Running command 
+
+[Container] 2024/03/14 14:55:43.855879 Running command 
+
+[Container] 2024/03/14 14:55:43.861749 Running command 
+
+[Container] 2024/03/14 14:55:43.868078 Running command 
+
+[Container] 2024/03/14 14:55:43.874177 Running command 
+
+[Container] 2024/03/14 14:55:43.883367 Running command 
+
+[Container] 2024/03/14 14:55:43.890711 Phase complete: PRE_BUILD State: SUCCEEDED
+[Container] 2024/03/14 14:55:43.890799 Phase context status code:  Message: 
+[Container] 2024/03/14 14:55:43.930552 Entering phase BUILD
+[Container] 2024/03/14 14:55:43.931090 Running command 
+
+[Container] 2024/03/14 14:55:43.937934 Running command echo Build build  started on `date`
+Build build started on Thu Mar 14 14:55:43 UTC 2024
+
+[Container] 2024/03/14 14:55:43.946249 Running command echo Building the Docker image...
+Building the Docker image...
+
+[Container] 2024/03/14 14:55:43.952101 Running command docker build -t $REPOSITORY_URI:latest --build-arg environment=$build_env .
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 2.72kB done
+#1 DONE 0.0s
+
+#2 [internal] load .dockerignore
+#2 transferring context: 684B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for public.ecr.aws/docker/library/node:18
+#3 DONE 0.3s
+
+#4 [base 1/5] FROM public.ecr.aws/docker/library/node:18@sha256:b39895225fb1984139d5af76400aff8fac3dd5bc00dd41a3ce22fc8a6cf538d5
+#4 resolve public.ecr.aws/docker/library/node:18@sha256:b39895225fb1984139d5af76400aff8fac3dd5bc00dd41a3ce22fc8a6cf538d5 0.0s done
+#4 sha256:5f899db30843f8330d5a40d1acb26bb00e93a9f21bff253f31c20562fa264767 0B / 64.14MB 0.1s
+#4 sha256:b39895225fb1984139d5af76400aff8fac3dd5bc00dd41a3ce22fc8a6cf538d5 1.21kB / 1.21kB done
+#4 sha256:9489b43a1afc6909c366b4ddd9e448da2cc54de8c9705f3bf219489f2e7e9e50 7.34kB / 7.34kB done
+#4 sha256:71215d55680cf0ab2dcc0e1dd65ed76414e3fb0c294249b5b9319a8fa7c398e4 5.24MB / 49.55MB 0.1s
+#4 sha256:3cb8f9c23302e175d87a827f0a1c376bd59b1f6949bd3bc24ab8da0d669cdfa0 0B / 24.05MB 0.1s
+#4 sha256:b9b691efd56107d88af8a390c20fcac9da6b7dbc18246ebb7f37293e18fe4e6d 2.00kB / 2.00kB done
+#4 sha256:5f899db30843f8330d5a40d1acb26bb00e93a9f21bff253f31c20562fa264767 4.19MB / 64.14MB 0.2s
+#4 sha256:71215d55680cf0ab2dcc0e1dd65ed76414e3fb0c294249b5b9319a8fa7c398e4 17.83MB / 49.55MB 0.2s
+#4 sha256:3cb8f9c23302e175d87a827f0a1c376bd59b1f6949bd3bc24ab8da0d669cdfa0 5.84MB / 24.05MB 0.2s
+#4 sha256:5f899db30843f8330d5a40d1acb26bb00e93a9f21bff253f31c20562fa264767 9.44MB / 64.14MB 0.3s
+#4 sha256:71215d55680cf0ab2dcc0e1dd65ed76414e3fb0c294249b5b9319a8fa7c398e4 22.02MB / 49.55MB 0.3s
+#4 sha256:3cb8f9c23302e175d87a827f0a1c376bd59b1f6949bd3bc24ab8da0d669cdfa0 12.58MB / 24.05MB 0.3s
+#4 sha256:5f899db30843f8330d5a40d1acb26bb00e93a9f21bff253f31c20562fa264767 17.83MB / 64.14MB 0.4s
+#4 sha256:71215d55680cf0ab2dcc0e1dd65ed76414e3fb0c294249b5b9319a8fa7c398e4 29.36MB / 49.55MB 0.4s
+#4 sha256:3cb8f9c23302e175d87a827f0a1c376bd59b1f6949bd3bc24ab8da0d669cdfa0 19.92MB / 24.05MB 0.4s
+#4 sha256:5f899db30843f8330d5a40d1acb26bb00e93a9f21bff253f31c20562fa264767 35.65MB / 64.14MB 0.6s
+#4 sha256:71215d55680cf0ab2dcc0e1dd65ed76414e3fb0c294249b5b9319a8fa7c398e4 49.55MB / 49.55MB 0.6s
+#4 sha256:3cb8f9c23302e175d87a827f0a1c376bd59b1f6949bd3bc24ab8da0d669cdfa0 24.05MB / 24.05MB 0.5s done
+#4 sha256:5f899db30843f8330d5a40d1acb26bb00e93a9f21bff253f31c20562fa264767 50.33MB / 64.14MB 0.7s
+#4 sha256:567db630df8d441ffe43e050ede26996c87e3b33c99f79d4fba0bf6b7ffa0213 4.19MB / 211.14MB 0.7s
+#4 sha256:5f899db30843f8330d5a40d1acb26bb00e93a9f21bff253f31c20562fa264767 59.77MB / 64.14MB 0.8s
+#4 sha256:71215d55680cf0ab2dcc0e1dd65ed76414e3fb0c294249b5b9319a8fa7c398e4 49.55MB / 49.55MB 0.7s done
+#4 sha256:f4ac4e9f5ffb96287f2ff537a9cf450fc883facf1276832aac2360270cb0af2b 3.37kB / 3.37kB 0.8s done
+#4 sha256:5f899db30843f8330d5a40d1acb26bb00e93a9f21bff253f31c20562fa264767 64.14MB / 64.14MB 0.9s
+#4 sha256:567db630df8d441ffe43e050ede26996c87e3b33c99f79d4fba0bf6b7ffa0213 19.92MB / 211.14MB 0.9s
+#4 sha256:b89e694c1a1753d015da05493bb6745eaf105bed7aa14b60d3cde9e2cb37bd3d 1.05MB / 46.03MB 0.9s
+#4 sha256:b89e694c1a1753d015da05493bb6745eaf105bed7aa14b60d3cde9e2cb37bd3d 4.19MB / 46.03MB 1.0s
+#4 sha256:5f899db30843f8330d5a40d1acb26bb00e93a9f21bff253f31c20562fa264767 64.14MB / 64.14MB 1.1s done
+#4 sha256:b89e694c1a1753d015da05493bb6745eaf105bed7aa14b60d3cde9e2cb37bd3d 10.49MB / 46.03MB 1.1s
+#4 extracting sha256:71215d55680cf0ab2dcc0e1dd65ed76414e3fb0c294249b5b9319a8fa7c398e4
+#4 sha256:567db630df8d441ffe43e050ede26996c87e3b33c99f79d4fba0bf6b7ffa0213 41.94MB / 211.14MB 1.2s
+#4 sha256:b89e694c1a1753d015da05493bb6745eaf105bed7aa14b60d3cde9e2cb37bd3d 17.83MB / 46.03MB 1.2s
+#4 sha256:1c559e3bc2cfd96cf1ec6a65df18e58171b83673a2c6dfe7dcb9c644c6362c50 2.21MB / 2.21MB 1.2s
+#4 sha256:b89e694c1a1753d015da05493bb6745eaf105bed7aa14b60d3cde9e2cb37bd3d 26.21MB / 46.03MB 1.3s
+#4 sha256:1c559e3bc2cfd96cf1ec6a65df18e58171b83673a2c6dfe7dcb9c644c6362c50 2.21MB / 2.21MB 1.3s done
+#4 sha256:f30d7a0d73c6174f4d8ac91b1632ffde7a08ec73f912e98a78d3fa679eb0adf2 0B / 450B 1.3s
+#4 sha256:567db630df8d441ffe43e050ede26996c87e3b33c99f79d4fba0bf6b7ffa0213 66.06MB / 211.14MB 1.5s
+#4 sha256:b89e694c1a1753d015da05493bb6745eaf105bed7aa14b60d3cde9e2cb37bd3d 40.89MB / 46.03MB 1.5s
+#4 sha256:f30d7a0d73c6174f4d8ac91b1632ffde7a08ec73f912e98a78d3fa679eb0adf2 450B / 450B 1.4s done
+#4 sha256:567db630df8d441ffe43e050ede26996c87e3b33c99f79d4fba0bf6b7ffa0213 77.59MB / 211.14MB 1.6s
+#4 sha256:b89e694c1a1753d015da05493bb6745eaf105bed7aa14b60d3cde9e2cb37bd3d 46.03MB / 46.03MB 1.6s
+#4 sha256:b89e694c1a1753d015da05493bb6745eaf105bed7aa14b60d3cde9e2cb37bd3d 46.03MB / 46.03MB 1.7s done
+#4 sha256:567db630df8d441ffe43e050ede26996c87e3b33c99f79d4fba0bf6b7ffa0213 111.15MB / 211.14MB 1.9s
+#4 ...
+
+#5 [internal] load build context
+#5 transferring context: 43.29MB 2.0s done
+#5 DONE 2.0s
+
+#4 [base 1/5] FROM public.ecr.aws/docker/library/node:18@sha256:b39895225fb1984139d5af76400aff8fac3dd5bc00dd41a3ce22fc8a6cf538d5
+#4 sha256:567db630df8d441ffe43e050ede26996c87e3b33c99f79d4fba0bf6b7ffa0213 125.83MB / 211.14MB 2.0s
+#4 sha256:567db630df8d441ffe43e050ede26996c87e3b33c99f79d4fba0bf6b7ffa0213 141.56MB / 211.14MB 2.2s
+#4 sha256:567db630df8d441ffe43e050ede26996c87e3b33c99f79d4fba0bf6b7ffa0213 160.43MB / 211.14MB 2.4s
+#4 sha256:567db630df8d441ffe43e050ede26996c87e3b33c99f79d4fba0bf6b7ffa0213 181.40MB / 211.14MB 2.6s
+#4 sha256:567db630df8d441ffe43e050ede26996c87e3b33c99f79d4fba0bf6b7ffa0213 211.14MB / 211.14MB 2.9s
+#4 sha256:567db630df8d441ffe43e050ede26996c87e3b33c99f79d4fba0bf6b7ffa0213 211.14MB / 211.14MB 3.3s done
+#4 extracting sha256:71215d55680cf0ab2dcc0e1dd65ed76414e3fb0c294249b5b9319a8fa7c398e4 3.0s done
+#4 extracting sha256:3cb8f9c23302e175d87a827f0a1c376bd59b1f6949bd3bc24ab8da0d669cdfa0
+#4 extracting sha256:3cb8f9c23302e175d87a827f0a1c376bd59b1f6949bd3bc24ab8da0d669cdfa0 0.6s done
+#4 extracting sha256:5f899db30843f8330d5a40d1acb26bb00e93a9f21bff253f31c20562fa264767
+#4 extracting sha256:5f899db30843f8330d5a40d1acb26bb00e93a9f21bff253f31c20562fa264767 2.4s done
+#4 extracting sha256:567db630df8d441ffe43e050ede26996c87e3b33c99f79d4fba0bf6b7ffa0213
+#4 extracting sha256:567db630df8d441ffe43e050ede26996c87e3b33c99f79d4fba0bf6b7ffa0213 5.0s
+#4 extracting sha256:567db630df8d441ffe43e050ede26996c87e3b33c99f79d4fba0bf6b7ffa0213 7.0s done
+#4 extracting sha256:f4ac4e9f5ffb96287f2ff537a9cf450fc883facf1276832aac2360270cb0af2b
+#4 extracting sha256:f4ac4e9f5ffb96287f2ff537a9cf450fc883facf1276832aac2360270cb0af2b done
+#4 extracting sha256:b89e694c1a1753d015da05493bb6745eaf105bed7aa14b60d3cde9e2cb37bd3d 0.1s
+#4 extracting sha256:b89e694c1a1753d015da05493bb6745eaf105bed7aa14b60d3cde9e2cb37bd3d 2.2s done
+#4 extracting sha256:1c559e3bc2cfd96cf1ec6a65df18e58171b83673a2c6dfe7dcb9c644c6362c50
+#4 extracting sha256:1c559e3bc2cfd96cf1ec6a65df18e58171b83673a2c6dfe7dcb9c644c6362c50 0.1s done
+#4 extracting sha256:f30d7a0d73c6174f4d8ac91b1632ffde7a08ec73f912e98a78d3fa679eb0adf2 done
+#4 DONE 17.8s
+
+#6 [base 2/5] RUN echo development
+#6 0.346 development
+#6 DONE 0.7s
+
+#7 [base 3/5] RUN echo development
+#7 0.325 development
+#7 DONE 0.4s
+
+#8 [base 4/5] RUN echo development
+#8 0.454 development
+#8 DONE 0.5s
+
+#9 [base 5/5] RUN if [ "development" = "development" ]; then       echo "Running in development environment";     elif [ "development" = "test" ]; then       echo "Running in test environment";     elif [ "development" = "uat" ]; then       echo "Running in uat environment";     else       echo "Running in production environment";     fi
+#9 0.379 Running in development environment
+#9 DONE 0.5s
+
+#10 [runner 1/4] WORKDIR /app
+#10 DONE 0.0s
+
+#11 [deps 2/3] COPY package.json ./
+#11 DONE 0.1s
+
+#12 [deps 3/3] RUN npm i -f
+#12 0.646 npm WARN using --force Recommended protections disabled.
+#12 10.60 npm WARN ERESOLVE overriding peer dependency
+#12 10.60 npm WARN While resolving: @marshallku/react-postscribe@0.1.11
+#12 10.60 npm WARN Found: react@18.2.0
+#12 10.60 npm WARN node_modules/react
+#12 10.60 npm WARN   react@"18.2.0" from the root project
+#12 10.60 npm WARN   16 more (@brightcove/react-player-loader, ...)
+#12 10.60 npm WARN 
+#12 10.60 npm WARN Could not resolve dependency:
+#12 10.60 npm WARN peer react@"^17.0.2" from @marshallku/react-postscribe@0.1.11
+#12 10.60 npm WARN node_modules/@marshallku/react-postscribe
+#12 10.60 npm WARN   @marshallku/react-postscribe@"^0.1.11" from the root project
+#12 10.60 npm WARN 
+#12 10.60 npm WARN Conflicting peer dependency: react@17.0.2
+#12 10.60 npm WARN node_modules/react
+#12 10.60 npm WARN   peer react@"^17.0.2" from @marshallku/react-postscribe@0.1.11
+#12 10.60 npm WARN   node_modules/@marshallku/react-postscribe
+#12 10.60 npm WARN     @marshallku/react-postscribe@"^0.1.11" from the root project
+#12 35.74 npm WARN deprecated sourcemap-codec@1.4.8: Please use @jridgewell/sourcemap-codec instead
+#12 35.76 npm WARN deprecated rollup-plugin-terser@7.0.2: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-terser
+#12 36.84 npm WARN deprecated workbox-cacheable-response@6.6.0: workbox-background-sync@6.6.0
+#12 36.96 npm WARN deprecated workbox-google-analytics@6.6.0: It is not compatible with newer versions of GA starting with v4, as long as you are using GAv3 it should be ok, but the package is not longer being maintained
+#12 37.34 npm WARN deprecated stable@0.1.8: Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility
+#12 38.64 npm WARN deprecated w3c-hr-time@1.0.2: Use your platform's native performance.now() and performance.timeOrigin.
+#12 38.64 npm WARN deprecated domexception@2.0.1: Use your platform's native DOMException instead
+#12 38.67 npm WARN deprecated abab@2.0.6: Use your platform's native atob() and btoa() methods instead
+#12 39.64 npm WARN deprecated @babel/plugin-proposal-private-methods@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-private-methods instead.
+#12 39.68 npm WARN deprecated @babel/plugin-proposal-nullish-coalescing-operator@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-nullish-coalescing-operator instead.
+#12 39.68 npm WARN deprecated @babel/plugin-proposal-numeric-separator@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-numeric-separator instead.
+#12 39.68 npm WARN deprecated @babel/plugin-proposal-class-properties@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-class-properties instead.
+#12 39.70 npm WARN deprecated @babel/plugin-proposal-optional-chaining@7.21.0: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-optional-chaining instead.
+#12 44.53 npm WARN deprecated svgo@1.3.2: This SVGO version is no longer supported. Upgrade to v2.x.x.
+#12 45.78 npm WARN deprecated redux-devtools-extension@2.13.9: Package moved to @redux-devtools/extension.
+#12 82.32 
+#12 82.32 added 1637 packages, and audited 1638 packages in 1m
+#12 82.32 
+#12 82.32 294 packages are looking for funding
+#12 82.32   run `npm fund` for details
+#12 82.35 
+#12 82.35 12 vulnerabilities (6 moderate, 6 high)
+#12 82.35 
+#12 82.35 To address all issues possible (including breaking changes), run:
+#12 82.35   npm audit fix --force
+#12 82.35 
+#12 82.35 Some issues need review, and may require choosing
+#12 82.35 a different dependency.
+#12 82.35 
+#12 82.35 Run `npm audit` for details.
+#12 82.35 npm notice 
+#12 82.35 npm notice New minor version of npm available! 10.2.4 -> 10.5.0
+#12 82.35 npm notice Changelog: <https://github.com/npm/cli/releases/tag/v10.5.0>
+#12 82.35 npm notice Run `npm install -g npm@10.5.0` to update!
+#12 82.35 npm notice 
+#12 DONE 82.7s
+
+#13 [builder 2/4] COPY --from=deps /app/node_modules ./node_modules
+#13 DONE 7.1s
+
+#14 [builder 3/4] COPY . .
+#14 DONE 0.7s
+
+#15 [builder 4/4] RUN if [ "development" = "development" ]; then       npm run build;     elif [ "development" = "test" ]; then       npm run build:test;     elif [ "development" = "uat" ]; then       npm run build:uat;     else       npm run build;     fi
+#15 0.772 
+#15 0.772 > fasb@0.1.0 build
+#15 0.772 > next build
+#15 0.772 
+#15 0.824 warn  - You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+#15 1.140 info  - Loaded env from /app/.env.local
+#15 1.255 warn  - You have enabled experimental features (scrollRestoration, largePageDataBytes) in next.config.js.
+#15 1.255 warn  - Experimental features are not covered by semver, and may cause unexpected or broken application behavior. Use at your own risk.
+#15 1.255 
+#15 1.323 
+#15 1.323 > Build error occurred
+#15 1.326 TypeError: fetch failed
+#15 1.326     at Object.fetch (node:internal/deps/undici/undici:11731:11)
+#15 1.326     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+#15 1.326     at async getRedirects (/app/next.config.js:9:17)
+#15 1.326     at async Object.rewrites (/app/next.config.js:36:34)
+#15 1.326     at async loadRewrites (/app/node_modules/next/dist/lib/load-custom-routes.js:437:23)
+#15 1.326     at async Promise.all (index 1)
+#15 1.326     at async Object.loadCustomRoutes [as default] (/app/node_modules/next/dist/lib/load-custom-routes.js:13:44)
+#15 1.326     at async Span.traceAsyncFn (/app/node_modules/next/dist/trace/trace.js:79:20)
+#15 1.326     at async /app/node_modules/next/dist/build/index.js:85:34
+#15 1.326     at async Span.traceAsyncFn (/app/node_modules/next/dist/trace/trace.js:79:20) {
+#15 1.326   cause: Error: getaddrinfo ENOTFOUND apidev.rws.fafus.org
+#15 1.326       at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:107:26) {
+#15 1.326     errno: -3008,
+#15 1.326     code: 'ENOTFOUND',
+#15 1.326     syscall: 'getaddrinfo',
+#15 1.326     hostname: 'apidev.rws.fafus.org'
+#15 1.326   }
+#15 1.326 }
+#15 1.334 npm notice 
+#15 1.334 npm notice New minor version of npm available! 10.2.4 -> 10.5.0
+#15 1.334 npm notice Changelog: <https://github.com/npm/cli/releases/tag/v10.5.0>
+#15 1.334 npm notice Run `npm install -g npm@10.5.0` to update!
+#15 1.334 npm notice 
+#15 ERROR: process "/bin/sh -c if [ \"$environment\" = \"development\" ]; then       npm run build;     elif [ \"$environment\" = \"test\" ]; then       npm run build:test;     elif [ \"$environment\" = \"uat\" ]; then       npm run build:uat;     else       npm run build;     fi" did not complete successfully: exit code: 1
+------
+ > [builder 4/4] RUN if [ "development" = "development" ]; then       npm run build;     elif [ "development" = "test" ]; then       npm run build:test;     elif [ "development" = "uat" ]; then       npm run build:uat;     else       npm run build;     fi:
+1.326     code: 'ENOTFOUND',
+1.326     syscall: 'getaddrinfo',
+1.326     hostname: 'apidev.rws.fafus.org'
+1.326   }
+1.326 }
+1.334 npm notice 
+1.334 npm notice New minor version of npm available! 10.2.4 -> 10.5.0
+1.334 npm notice Changelog: <https://github.com/npm/cli/releases/tag/v10.5.0>
+1.334 npm notice Run `npm install -g npm@10.5.0` to update!
+1.334 npm notice 
+------
+Dockerfile:49
+--------------------
+  48 |     # Use the NODE_ENV variable to conditionally set up your application
+  49 | >>> RUN if [ "$environment" = "development" ]; then \
+  50 | >>>       npm run build; \
+  51 | >>>       # Add commands for development environment here
+  52 | >>>     elif [ "$environment" = "test" ]; then \
+  53 | >>>       npm run build:test; \
+  54 | >>>       # Add commands for staging environment here
+  55 | >>>     elif [ "$environment" = "uat" ]; then \
+  56 | >>>       npm run build:uat; \
+  57 | >>>       # Add commands for staging environment here
+  58 | >>>     else \
+  59 | >>>       npm run build; \
+  60 | >>>       # Add commands for production environment here
+  61 | >>>     fi
+  62 |     
+--------------------
+ERROR: failed to solve: process "/bin/sh -c if [ \"$environment\" = \"development\" ]; then       npm run build;     elif [ \"$environment\" = \"test\" ]; then       npm run build:test;     elif [ \"$environment\" = \"uat\" ]; then       npm run build:uat;     else       npm run build;     fi" did not complete successfully: exit code: 1
+
+[Container] 2024/03/14 14:58:06.654575 Command did not exit successfully docker build -t $REPOSITORY_URI:latest --build-arg environment=$build_env . exit status 1
+[Container] 2024/03/14 14:58:06.665847 Phase complete: BUILD State: FAILED
+[Container] 2024/03/14 14:58:06.665863 Phase context status code: COMMAND_EXECUTION_ERROR Message: Error while executing command: docker build -t $REPOSITORY_URI:latest --build-arg environment=$build_env .. Reason: exit status 1
+[Container] 2024/03/14 14:58:06.707454 Entering phase POST_BUILD
+[Container] 2024/03/14 14:58:06.708015 Running command echo Build post_build completed on `date`
+Build post_build completed on Thu Mar 14 14:58:06 UTC 2024
+
+[Container] 2024/03/14 14:58:06.715707 Running command echo Pushing the Docker images...
+Pushing the Docker images...
+
+[Container] 2024/03/14 14:58:06.722071 Running command docker push $REPOSITORY_URI:latest
+The push refers to repository [353536283373.dkr.ecr.us-east-1.amazonaws.com/dev-fasb-frontend]
+An image does not exist locally with the tag: 353536283373.dkr.ecr.us-east-1.amazonaws.com/dev-fasb-frontend
+
+[Container] 2024/03/14 14:58:06.756933 Command did not exit successfully docker push $REPOSITORY_URI:latest exit status 1
+[Container] 2024/03/14 14:58:06.762300 Phase complete: POST_BUILD State: FAILED
+[Container] 2024/03/14 14:58:06.762319 Phase context status code: COMMAND_EXECUTION_ERROR Message: Error while executing command: docker push $REPOSITORY_URI:latest. Reason: exit status 1
+[Container] 2024/03/14 14:58:06.914827 Expanding base directory path: .
+[Container] 2024/03/14 14:58:06.918607 Assembling file list
+[Container] 2024/03/14 14:58:06.918622 Expanding .
+[Container] 2024/03/14 14:58:06.921983 Expanding file paths for base directory .
+[Container] 2024/03/14 14:58:06.921996 Assembling file list
+[Container] 2024/03/14 14:58:06.922000 Expanding imagedefinitions.json
+[Container] 2024/03/14 14:58:06.925891 Skipping invalid file path imagedefinitions.json
+[Container] 2024/03/14 14:58:06.925987 Phase complete: UPLOAD_ARTIFACTS State: FAILED
+[Container] 2024/03/14 14:58:06.925997 Phase context status code: CLIENT_ERROR Message: no matching artifact paths found
+

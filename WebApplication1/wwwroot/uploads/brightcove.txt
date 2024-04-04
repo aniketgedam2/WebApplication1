@@ -1,0 +1,11 @@
+https://player.support.brightcove.com/training/developer-basics-videos.html#tab1
+https://live.support.brightcove.com/get-started/brightcove-live-training-videos.html?videoId=5810341453001
+https://apis.support.brightcove.com/interactivity/references/reference.html#tag/Template-Annotations/operation/CreateTemplateAnnotation
+https://player.support.brightcove.com/code-samples/brightcove-player-sample-all-time-video-views.html
+https://fasb-live.prd.faf.us.com/Page/PageContent?PageId=/news-media/videospodcasts.html
+https://studio.support.brightcove.com/interactivity/experiences/generating-embed-code.html
+
+
+
+
+http://localhost:3000/page/detail?pageId=/projects/FASB-Taxonomies/gaap-financial-reporting-taxonomy.html

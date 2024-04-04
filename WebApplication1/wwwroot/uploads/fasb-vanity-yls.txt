@@ -1,0 +1,280 @@
+ 	    {
+                VanityUrl: "/store/reset/password/6h4RX1JBlzuaM38ct7PQ6Ql6pONmyYGo7dbbDzkWoRCqhWhCJavJTMKZnvHk1XpqCoPhDglC1D2roDQ88pG8t92XUkawXEuytAiR67iPOrgYSR7WlNVNvKx8RdXFQcpbNwPDHNnXerLLLdsIGWVy0AmR4ADKvwWrfGum2kYOgNfd&username=testuser%40ovitas.com",
+                OrignalUrl: "https://www.faf-fasb.org/store/reset/password/6h4RX1JBlzuaM38ct7PQ6Ql6pONmyYGo7dbbDzkWoRCqhWhCJavJTMKZnvHk1XpqCoPhDglC1D2roDQ88pG8t92XUkawXEuytAiR67iPOrgYSR7WlNVNvKx8RdXFQcpbNwPDHNnXerLLLdsIGWVy0AmR4ADKvwWrfGum2kYOgNfd&username=testuser%40ovitas.com"
+            },
+
+            {
+                VanityUrl: "/store/accountreg",
+                OrignalUrl: "https://www.faf-fasb.org/store/accountreg"
+            },
+
+            {
+                VanityUrl: "/accountingchanges_1",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/AC_TIG/accountingchanges_1.pdf"
+            },
+            {
+                VanityUrl: "/asuadoptiontransition_2020",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/AC_TIG/accountingchanges_1.pdf"
+            },
+            {
+                VanityUrl: "/consolidatedandnonconsolidatedentities_1",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/CNE_TIG/consolidatedandnonconsolidatedentities_1.pdf"
+            },
+            {
+                VanityUrl: "/consolidatedandnonconsolidatedentities_2018",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/CNE_TIG/consolidatedandnonconsolidatedentities_2018.pdf"
+            },
+            {
+                VanityUrl: "/debtsecurities_1",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/DS_TIG/debtsecurities_1.pdf"
+            },
+            {
+                VanityUrl: "/debtsecurities_2019",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/DS_TIG/debtsecurities_1.pdf"
+            },
+            {
+                VanityUrl: "/disposalgroupsanddiscoperations_1",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/DG_TIG/disposalgroupsanddiscoperations_1.pdf"
+            },
+            {
+                VanityUrl: "/disposalgroupsanddiscoperations_2017",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/DG_TIG/disposalgroupsanddiscoperations_1.pdf"
+            },
+            {
+                VanityUrl: "/extensibleenumerations",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/EE_PG/extensibleenumerations.pdf"
+            },
+            {
+                VanityUrl: "/extensiblelists",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/EE_PG/extensibleenumerations.pdf"
+
+            },
+            {
+                VanityUrl: "/financingreceivables_2016",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/FR_TIG/financingreceivables_2016.pdf"
+            },
+            {
+                VanityUrl: "/finreceivableandcurrentexpectedloss_1",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/FR_TIG/finreceivableandcurrentexpectedloss_1.pdf"
+            },
+            {
+                VanityUrl: "/finreceivableandcurrentexpectedloss_2020",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/FR_TIG/finreceivableandcurrentexpectedloss_1.pdf"
+            },
+            {
+                VanityUrl: "/insuranceconcentrationrisk_1",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/CCR_TIG/insuranceconcentrationrisk_1.pdf"
+            },
+            {
+                VanityUrl: "/insuranceconcentrationrisk_2017",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/CCR_TIG/insuranceconcentrationrisk_1.pdf"
+            },
+            {
+                VanityUrl: "/insurancelongduration_1",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/LD_TIG/insurancelongduration_1.pdf"
+            },
+
+            {
+                VanityUrl: "/insurancelongduration_2020",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/LD_TIG/insurancelongduration_1.pdf"
+            },
+
+            {
+                VanityUrl: "/leases_1",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/LE_TIG/leases_1.pdf"
+            },
+
+            {
+                VanityUrl: "/leases_2020",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/LE_TIG/leases_1.pdf"
+            },
+
+            {
+                VanityUrl: "/measurementdatedefinedben_1",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/MD_TIG/measurementdatedefinedben_1.pdf"
+            },
+
+            {
+                VanityUrl: "/measurementdatedefinedben_2017",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/MD_TIG/measurementdatedefinedben_1.pdf"
+            },
+
+            {
+                VanityUrl: "/notionalamounts_1",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/NL_TIG/notionalamounts_1.pdf"
+            },
+
+            {
+                VanityUrl: "/notionalamounts_2017",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/NL_TIG/notionalamounts_1.pdf"
+            },
+
+            {
+                VanityUrl: "/offsetttingassetsandliabilities_1",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/OFF_TIG/offsetttingassetsandliabilities_1.pdf"
+            },
+
+            {
+                VanityUrl: "/offsetttingassetsandliabilities_2016",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/OFF_TIG/offsetttingassetsandliabilities_1.pdf"
+            },
+
+            {
+                VanityUrl: "/othercompincome_1",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/OCI_TIG/othercompincome_1.pdf"
+            },
+
+            {
+                VanityUrl: "/othercompincome_2018",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/OCI_TIG/othercompincome_1.pdf"
+            },
+
+            {
+                VanityUrl: "/reinsurance_1",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/REIN1_TIG/reinsurance_1.pdf"
+            },
+
+            {
+                VanityUrl: "/repurchasetomaturityagreements_1",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/REPO_TIG/repurchasetomaturityagreements_1.pdf"
+            },
+
+            {
+                VanityUrl: "/repurchasetomaturityagreements_2017",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/REPO_TIG/repurchasetomaturityagreements_1.pdf"
+            },
+
+            {
+                VanityUrl: "/retirementbenefitsphase1",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/RB_TIG/retirementbenefitsphase1_1.pdf"
+            },
+
+            {
+                VanityUrl: "/retirementbenefitsphase1_2017",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/RB_TIG/retirementbenefitsphase1_1.pdf"
+            },
+
+            {
+                VanityUrl: "/retirementbenefitsphase2",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/RB_TIG/retirementbenefitsphase2_1.pdf"
+            },
+
+            {
+                VanityUrl: "/retirementbenefitsphase2_2020",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/RB_TIG/retirementbenefitsphase2_1.pdf"
+            },
+
+            {
+                VanityUrl: "/retirementbenefitsphase3",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/RB_TIG/retirementbenefitsphase3_1.pdf"
+            },
+
+            {
+                VanityUrl: "/retirementbenefitsphase3_2020",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/RB_TIG/retirementbenefitsphase3_1.pdf"
+            },
+
+            {
+                VanityUrl: "/revenue_1",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/Rev_TIG/revenue_1.pdf"
+            },
+
+            {
+                VanityUrl: "/revenue_2020",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/Rev_TIG/revenue_1.pdf"
+            },
+            {
+                VanityUrl: "/segmentreporting_1",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/SG_TIG/segmentreporting_1.pdf"
+            },
+
+            {
+                VanityUrl: "/segmentreporting_2017",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/SG_TIG/segmentreporting_1.pdf"
+            },
+
+            {
+                VanityUrl: "/shortdurationinsurance_1",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/SD_TIG/shortdurationinsurance_1.pdf"
+            },
+
+            {
+                VanityUrl: "/shortdurationinsurance_2017",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/SD_TIG/shortdurationinsurance_1.pdf"
+            },
+
+            {
+                VanityUrl: "/subsequentevents_1",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/SE_TIG/subsequentevents_1.pdf"
+            },
+
+            {
+                VanityUrl: "/subsequentevents_2017",
+                OrignalUrl: "https://xbrl.fasb.org/impguidance/SE_TIG/subsequentevents_1.pdf"
+            },
+
+            {
+                VanityUrl: "/taxonomyfaq",
+                OrignalUrl: "https://xbrl.fasb.org/resources/taxonomyfaq.pdf"
+            },
+
+            {
+                VanityUrl:"/meetings",
+                OrignalUrl:"/news-and-meetings"
+            },
+            {
+                VanityUrl:"/referencelibrary",
+                OrignalUrl:"/archive"
+            },
+            {
+                VanityUrl:"/newsmedia",
+                OrignalUrl:"/news-and-meetings"
+            },
+            {
+                VanityUrl:"/eitf",
+                OrignalUrl:"/about-us/advisory-groups/eitf"
+            },
+            {
+                VanityUrl:"/xbrl",
+                OrignalUrl:"/projects/fasb-taxonomies"
+            },
+            {
+                VanityUrl:"/pcc",
+                OrignalUrl:"/about-us/advisory-groups/pcc"
+            },
+            {
+                VanityUrl:"/academics",
+                OrignalUrl:"/about-us/connecting-with-stakeholders/academics"
+            },
+            {
+                VanityUrl:"/investors",
+                OrignalUrl:"/about-us/connecting-with-stakeholders/investors"
+            },
+            {
+                VanityUrl:"/technicalagenda",
+                OrignalUrl:"/projects/current-projects"
+            },
+            {
+                VanityUrl:"/pir",
+                OrignalUrl:"/about-us/post-implementation-review-process"
+            },
+            {
+                VanityUrl:"/contact",
+                OrignalUrl:"/news-and-meetings/contact-us"
+            },
+            {
+                VanityUrl:"/careers",
+                OrignalUrl:"https://accountingfoundation.org/careers"
+            },
+            {
+                VanityUrl:"/register",
+                OrignalUrl:"/news-and-meetings/upcoming-meetings/register"
+            },
+            {
+                VanityUrl:"/facts",
+                OrignalUrl:"/about-us/about-the-fasb"
+            },
+            {
+                VanityUrl:"/nfp",
+                OrignalUrl:"/about-us/connecting-with-stakeholders/not-for-profits"
+            },

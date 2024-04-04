@@ -1,0 +1,36 @@
+ public async Task<ActionResult> Index()
+        {
+
+            var client = new GraphQLHttpClient(new GraphQLHttpClientOptions
+            {
+                EndPoint = new Uri("https://countries.trevorblades.com/graphql")
+            });
+
+            var msg = new GraphQLRequest
+            {
+               /*Query = @" 
+                {
+                    country(code: ""BR"") 
+                   {
+                    name
+                    native
+                    capital
+                    emoji
+                    currency
+                  }
+                }"*/
+
+                Query = @"{
+                      continents {
+                        name
+                        code
+                      }
+                    }"
+
+            };
+            var graphQLResponse = await client.SendQueryAsync<dynamic>(msg);
+
+            var data = graphQLResponse.Data.continents;
+            ViewBag.studydata = data;
+            return View(data);
+        }
